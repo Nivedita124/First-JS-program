@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="books.css">
+    <title>Javascript DOM</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="banner">
+                <h1 class="title">Bookorama</h1>
+                <p>Books For Ninjas</p>
+                <form id="books">
+                    <input type="text" placeholder="search books...">
+                </form>
+            </div>
+        </header>
+
+        <div id="book-list">
+            <h2 class="title">Books to read</h2>
+            <ul>
+                <li>
+                    <span class="name">The Namesake</span>
+                    <span class="del">Delete</span>
+                </li>
+                <li>
+                    <span class="name">Wings Of Fire</span>
+                    <span class="del">Delete</span>
+                </li>
+                <li>
+                    <span class="name">Paths Of Glory</span>
+                    <span class="del">Delete</span>
+                </li>
+                <li>
+                    <span class="name">Pride and Prejudice</span>
+                    <span class="del">Delete</span>
+                </li>
+                <li>
+                    <span class="name">Great Expectations</span>
+                    <span class="del">Delete</span>
+                </li>
+                <li>
+                    <span class="name">The Lost Symbol</span>
+                    <span class="del">Delete</span>
+                </li>
+            </ul>
+        </div>
+        <form id="add-book">
+            <div class="check">
+                <input type="checkbox" id="hide"/>
+                <label for="hide">Hide all books</label>
+            </div>
+            <div class="btn">
+                <input type="text" placeholder="add a book...">
+                <button>Add</button>
+            </div>
+        </form>
+    </div>
+    <script src="books.js"></script>
+</body>
+</html>

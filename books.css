@@ -1,0 +1,109 @@
+body{
+    background-image: url("bg.jpg");
+}
+#wrapper{
+width: 90%;
+max-width: 960px;
+margin: 20px auto;
+border-radius: 6px;
+box-shadow:  0px 1px 6px rgba(0,0,0,0.5);
+box-sizing: border-box;
+padding: 0px 0px 20px;
+overflow: hidden;
+border: 1px solid lightgrey;
+background-image: url("book.jpg");
+background-size: cover;
+background-position: center -500px;
+}
+#banner{
+    background: rgb(204, 236, 235);
+    padding: 10px 0px;
+}
+#banner h1, #banner p{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+}
+#banner input, #add-book input{
+    /* width: 100%; */
+    /* max-width: 300px; */
+    /* margin: 20px, auto;*/
+    display: block;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border: 0px; 
+    border-radius: 20px;
+    font-size: 17px;
+}
+#banner .title{
+    color: purple;
+}
+#book-list .title{
+    color: white;
+}
+#books, .check, .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#book-list, #add-book{
+    margin: 30px;
+}
+#book-list ul{
+    list-style-type: none;
+    padding: 0px;
+}
+#book-list li{
+    padding: 20px;
+    /* border-left: 5px solid transparent; */
+    margin: 20px 10px;
+}
+#book-list li:hover{
+    border-left: 5px solid #4b40df;
+    cursor: pointer;
+}
+.del, button{
+    float: right;
+    background: #4b40df;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    border: none;
+    padding: 10px;
+}
+.del:hover{
+    background-color: white;
+    color: black;
+}
+/* #add-book:after{
+    content: '';
+    display: block;
+    clear: both;
+}*/
+#add-book #hide{
+    width: 30px;
+}
+#add-book label{
+    line-height: 52px;
+    color: thistle;
+}
+#tabbed li{
+    display: inline-block;
+    padding: 10px 14px;
+    background: #444;
+    cursor: pointer;
+    margin-right: 10px;
+    color: lavender;
+    box-shadow: 0px 10px 10px black;
+}
+#tabbed .panel{
+    display: none;
+    border: 1px solid #ddd;
+    padding: 0px 10px;
+    color: navajowhite;
+}
+.panel.active{
+    display: block;
+}
